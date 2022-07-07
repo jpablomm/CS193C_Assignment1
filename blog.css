@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #2B2D2F;
+    padding: 0px;
+    margin: 0px;
+}
+
+#titlebar {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: #9A0000;
+}
+
+#titlebar h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#titlebar img {
+    width: 35px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.entry {
+    border: 1px solid black;
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-content: space-between;
+    gap: 5px;
+}
+.entry .entryheading h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.entrydate {
+    font-style: italic;
+}
+
+.entry .entryfooter {
+    margin-top: auto;
+    font-weight: bold;
+}
+
+#church {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    #titlebar h1 {
+        font-size: 2em;
+    }
+    
+    #titlebar img {
+        width: 75px;
+    }
+    
+    #main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-top: 20px;
+        gap: 1%;
+    }
+    .entry {
+        flex-basis: 28%;
+    }
+    .entry .entryheading {
+        border-bottom: 1px solid black;
+    }
+    
+    .entry .entryfooter {
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        margin-top: auto;
+        font-weight: bold;
+    }
+    
+    .entry:hover {
+        box-shadow: 0 4px 8px 0 whitesmoke;
+    }
+
+    #church {
+        display: contents;
+        width: 100%;
+    }
+
+    #church img {
+        border: 1px solid black;
+    }
+
+    .last {
+        order: -1;;
+    }
+}

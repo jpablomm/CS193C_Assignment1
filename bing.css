@@ -1,0 +1,123 @@
+html {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, #calendar {
+    font-family: sans-serif;
+}
+
+#title {
+    color: #cc0000;
+    margin-bottom: 0;
+    font-size: 20pt;
+    font-weight: bold;
+}
+#edition {
+    color: #cc0000;
+    margin-top: 0;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#bing h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+#bing img {
+    width: 100%;
+}
+
+#calendar h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#calendar ul {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid black;
+}
+
+#calendar li {
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-style: italic;
+}
+
+@media (min-width: 650px) {
+    #edition {
+        margin-bottom: 10px;
+    }
+    #bing h3 {
+        margin-top: 0;
+    }
+    #bing img {
+        float: left;
+        width: 50%;
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+    #calendar {
+        clear: both;
+        margin-top: 20px;
+    }
+    #title {
+        font-size: 32pt;
+    }
+}
+
+@media (min-width: 815px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #container {
+        display: grid;
+        grid-template-columns: 500px 300px;
+        grid-template-rows: 1fr 9fr;
+        gap: 20px;
+    }
+    header {
+        padding-top: 20px;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #edition {
+        width: 100px;
+        padding-top: 0;
+        text-align: right;
+    }
+    #title {
+        margin-top: 0;
+        font-size: 36pt;
+    }
+    #bing {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    #calendar {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        margin-top: 0px;
+    }
+    #calendar h3 {
+        margin-top: 0px;
+    }
+    #bing img {
+        padding-right: 10px;
+        width: 60%;
+        float: left;
+    }
+}

@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 1fr;
+    gap: 10px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / 10;
+    grid-row: 1 / 2;
+    background-color: #9A0000;
+    font-family: sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+header img {
+    height: 100%;
+}
+
+header h1 {
+    padding-left: 20px;
+}
+
+#profile {
+    grid-column: 1 / 4;
+    grid-row: 2 / 8;
+    padding: 20px;
+}
+
+#profile img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#updates {
+    grid-column: 4 / 10;
+    grid-row: 2;
+}
+#newUpdate {
+    grid-column: 10 / 13;
+    grid-row: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#newUpdate input {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+#newUpdate textarea {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+.title {
+    padding: 5px;
+    margin-top: 0;
+    font-weight: bold;
+    background-color:  #CC9191;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+#listOfUpdates {
+    padding: 0;
+    list-style-type: none;
+}
+
+.update {
+    border-top: 2px solid gray;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.bolded {
+    font-weight: bold;
+}
